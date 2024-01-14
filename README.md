@@ -41,6 +41,9 @@ The Simulation below is to show the CTAT nature of diode voltage.
 
 ![Screenshot from 2024-01-13 01-39-18](https://github.com/K-shejuti/Bandgap-Reference-Circuit/assets/152790020/e0cb8cb8-7c81-4b89-a709-a55139693b39)
 
+## PTAT Voltage Generation
+
+
 
 
 
