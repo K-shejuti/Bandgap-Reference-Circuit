@@ -16,4 +16,4 @@ Low voltage Zener diode is not available
 
 Solution
 
--A Bangap reference which can be integrated in bulk CMOS, Bi-CMOS or Bipolar technologies without the use of external components.
+- A Bangap reference which can be integrated in bulk CMOS, Bi-CMOS or Bipolar technologies without the use of external components.
