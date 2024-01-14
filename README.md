@@ -32,4 +32,13 @@ The operation principle of BGR circuits is to sum a voltage with negative tempra
 
 ![BGR_Principle](https://github.com/K-shejuti/Bandgap-Reference-Circuit/assets/152790020/edb023d4-39e9-4ecb-8402-3017330b75bc)
 
+## CTAT Voltage Generation
+Usually semiconductor diodes shows CTAT behaviour. If we consider constant current is flowing through a forwrard biased diode, then with increase in temp. we can observe that the voltage across the diode is decreaseing. Generally, it is found that the slope of the V~Temp is -2mV/deg Centigarde.
+
+
+
+![CTAT](https://github.com/K-shejuti/Bandgap-Reference-Circuit/assets/152790020/bd9fc2d1-4383-457e-a335-6d11954b6a19)
+
+
+
   
