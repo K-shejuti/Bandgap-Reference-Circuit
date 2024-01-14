@@ -7,7 +7,8 @@ The Bandgap Reference (BGR) is a circuit which provides a stable voltage output 
 
 Why BGR
 A battery is unsuitable for use as a reference voltage source.
-*voltage drops over time*
+
+-voltage drops over time
 A typical power supply is also not suitable
 noisy output and/or residual ripple.
 A voltage reference IC used buried Zener diode,
