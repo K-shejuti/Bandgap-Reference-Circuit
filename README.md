@@ -81,6 +81,21 @@ The CTAT Voltage generation circuit consist of a BJT connected as a diode and a 
 
 The Simulation is to show CTAT voltage.
 
+![Screenshot from 2024-01-13 01-39-45](https://github.com/K-shejuti/Bandgap-Reference-Circuit/assets/152790020/9397e965-e5a5-40f7-b962-6aff00e29916)
+
+![Screenshot from 2024-01-13 01-39-18](https://github.com/K-shejuti/Bandgap-Reference-Circuit/assets/152790020/1113b4fc-fcbf-45b4-adbb-f99e609f67f4)
+
+### 1.2) PTAT Voltage Generation
+As dicussed above we can get PTAT voltage by taking a difference between the votage of 1 diode and n diodes, for simple simulation we are taking n=2. but in general n=8 is taken.
+
+![Screenshot from 2024-01-13 02-10-37](https://github.com/K-shejuti/Bandgap-Reference-Circuit/assets/152790020/80b42227-1a9f-4432-8284-7618a576f9ab)
+
+We can observe from Simulation that the slope of PTAT voltage is much lesser than the slope of CTAT voltages.
+
+
+
+
+
 
 
 
