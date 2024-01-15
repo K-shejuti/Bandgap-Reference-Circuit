@@ -149,6 +149,8 @@ The startup issue is solved and the circuit is again giving a vref of 1.2V.
 
 ![Screenshot from 2024-01-14 15-23-08](https://github.com/K-shejuti/Bandgap-Reference-Circuit/assets/152790020/aa8fb74e-7edb-442d-a509-469fa76f0398)
 
+This is the complete simulation of current mirror based startup circuit. 
+
 
 
 
