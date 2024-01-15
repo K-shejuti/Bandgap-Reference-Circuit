@@ -123,7 +123,27 @@ The below is the simulation for it:
 
  ![Screenshot from 2024-01-14 13-50-25](https://github.com/K-shejuti/Bandgap-Reference-Circuit/assets/152790020/680b0a69-8d11-4fc0-9188-c490b36755c7)
 
-Inially for small value of the supply the mosfets are not in saturation. but after reaching a certain voltage all the Mos are in saturation and the reference voltage is again near to 1.2 V . So the circuit is alos taking care of supply variation.
+Inially for small value of the supply the mosfets are not in saturation. but after reaching a certain voltage all the Mos are in saturation and the reference voltage is again near to 1.2 V . So the circuit is also taking care of supply variation.
+
+### 1.6) Startup Circuit:
+
+Since the circuit is self baised we need a startup circuits. There are total two operating region
+
+- Zero current region
+- Normal operating region
+Zero cucrent region is a stable operating region . so once the circuit enters this region it can't come out of the state without disturbance. but current in the circuit is zero ,so the circuit can't attend the reference voltgae of 1.2V. This issue can only be observed in transient and when the supply has a finite delay and rise time.
+
+![Screenshot from 2024-01-14 15-07-07](https://github.com/K-shejuti/Bandgap-Reference-Circuit/assets/152790020/414f65a0-4b5f-4b41-b76d-6452baf3cbe7)
+
+![Screenshot from 2024-01-14 15-08-41](https://github.com/K-shejuti/Bandgap-Reference-Circuit/assets/152790020/ee9a1a50-cf76-4015-a83f-7275ba0bab44)
+
+We can observe here that vref is reaching a maimum value of 450 mv.
+
+
+
+
+
+
 
 
 
