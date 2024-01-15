@@ -45,6 +45,24 @@ The Simulation below is to show the CTAT nature of diode voltage.
 
 ![Equation](https://github.com/K-shejuti/Bandgap-Reference-Circuit/assets/152790020/f63e6032-b1bb-4050-a046-72a327ec4791)
 
+From Diode current equation we can find that it has two parts, i.e.
+
+- Vt (Thermal Voltage) which is directly proportional to the temp. (order ~ 1)
+- Is (Reverse saturation current) which is directly proportional to the temp. (order ~ 2.5), as this Is term is in denominator so with increase in temp. the ln(Io/Is) decreases which is responsible for CTAT nature of the diode.
+
+So to get a PTAT Voltage generation circuit we have to find some way such that we can get the Vt separated from Is.
+To get Vt separated from Is we can approach in the following way
+
+![PTATCKT](https://github.com/K-shejuti/Bandgap-Reference-Circuit/assets/152790020/ed891108-dc89-4082-bb0f-8ab2c75f8be3)
+
+In the above circuit same amount of current I is flowing in both the branches. If somehow we make the node volatge at point A and B equal the voltage drop across the resistor will be proportional to Vt and independent of Is, so it is a PTAT.
+
+![PTATEQN](https://github.com/K-shejuti/Bandgap-Reference-Circuit/assets/152790020/472a00f1-fec8-41a1-8c3b-8bf943c7ed0e)
+
+The PTAT simulation is shown below.
+
+
+
 
 
 
