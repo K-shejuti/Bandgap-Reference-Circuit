@@ -139,6 +139,17 @@ Zero cucrent region is a stable operating region . so once the circuit enters th
 
 We can observe here that vref is reaching a maimum value of 450 mv.
 
+The start-up circuit forecefully flows a slow amount of current through the self-biased current mirror when the current is 0 in the current mirror branches, as the current mirror is self biased this small current creats a disturbance and the current mirror auto biased to the desired current value.
+
+Below is the circuit drawn is Xschem. 
+
+![Screenshot from 2024-01-14 15-23-21](https://github.com/K-shejuti/Bandgap-Reference-Circuit/assets/152790020/bb6ccae2-35b0-46be-94ef-f5a0938620ea)
+
+The startup issue is solved and the circuit is again giving a vref of 1.2V.
+
+![Screenshot from 2024-01-14 15-23-08](https://github.com/K-shejuti/Bandgap-Reference-Circuit/assets/152790020/aa8fb74e-7edb-442d-a509-469fa76f0398)
+
+
 
 
 
