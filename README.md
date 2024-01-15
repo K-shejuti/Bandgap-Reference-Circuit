@@ -35,12 +35,6 @@ The operation principle of BGR circuits is to sum a voltage with negative tempra
 ## CTAT Voltage Generation
 Usually semiconductor diodes shows CTAT behaviour. If we consider constant current is flowing through a forwrard biased diode, then with increase in temp. we can observe that the voltage across the diode is decreaseing. Generally, it is found that the slope of the V~Temp is -2mV/deg Centigarde.
 
-The Simulation below is to show the CTAT nature of diode voltage.
-
-![Screenshot from 2024-01-13 01-39-45](https://github.com/K-shejuti/Bandgap-Reference-Circuit/assets/152790020/2ef3255b-c8df-4d83-a4f6-a3a1a2237134)
-
-![Screenshot from 2024-01-13 01-39-18](https://github.com/K-shejuti/Bandgap-Reference-Circuit/assets/152790020/e0cb8cb8-7c81-4b89-a709-a55139693b39)
-
 ## PTAT Voltage Generation
 
 ![Equation](https://github.com/K-shejuti/Bandgap-Reference-Circuit/assets/152790020/f63e6032-b1bb-4050-a046-72a327ec4791)
@@ -59,7 +53,38 @@ In the above circuit same amount of current I is flowing in both the branches. I
 
 ![PTATEQN](https://github.com/K-shejuti/Bandgap-Reference-Circuit/assets/152790020/472a00f1-fec8-41a1-8c3b-8bf943c7ed0e)
 
-The PTAT simulation is shown below.
+From above we can see that the voltage V-V1 is PTAT in nature, but it's slope is very less as compared to the CTAT, so we have to increase the slope. In order to increase the slope we can increase the number of diodes in parallel. Or a better way is to amplify the voltage V-V1 to get a higher PTAT slope.
+
+![PTAT](https://github.com/K-shejuti/Bandgap-Reference-Circuit/assets/152790020/9849f818-b79d-4030-b44a-67c13862eab9)
+
+# Types of BGR:
+1)Using Sself-biased Current Mirror
+2)Using Operational Amplifier
+
+Application wise BGR can be categorised as 
+- Low-voltage BGR
+- Low-power BGR
+- High-PSRR and low-noise BGR
+- Curvature compensated BGR
+
+## 1)Self Biased Current Mirror based BGR
+
+The Self-biased current mirror based constitute of the following components.
+- CTAT voltage generation circuit
+- PTAT voltage generation circuit
+- Self-biased current mirror circuit
+- Reference branch circuit
+- Start-up circuit
+
+### 1.1) CTAT Voltage Generation Circuit
+The CTAT Voltage generation circuit consist of a BJT connected as a diode and a constant current is passed through it. The voltage across the diode  shows CTAT nature as explained above.
+
+The Simulation is to show CTAT voltage.
+
+
+
+
+
 
 
 
