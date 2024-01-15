@@ -110,6 +110,14 @@ The whole circuit drawn is xschem below:
 
 ![Screenshot from 2024-01-14 13-56-01](https://github.com/K-shejuti/Bandgap-Reference-Circuit/assets/152790020/19fb5e20-d50c-40d7-a84a-c588fbf8fabd)
 
+Now we do know that slope of CTAT is greater than slope of PTAT, so we need to amplify our PTAT voltage, now voltage across the resistance R2= R2/R1*Vtln(n). R1 is used to fix the current in current mirror branch. We can either increase number of diodes in parallel or increase the R2 value, Here we will increase R2 to amplify our PTAT.
+
+From the simualtion we can observe that when R2=85k ohm ,the CTAT and PTAT nearly cancels each other and we get the constant voltage of 1.2V as vreference.
+
+The below is the simulation for it:
+
+![Screenshot from 2024-01-14 13-33-32](https://github.com/K-shejuti/Bandgap-Reference-Circuit/assets/152790020/890aff86-3105-4543-af10-26685ae4be88)
+
 
 
 
