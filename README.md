@@ -92,6 +92,28 @@ As dicussed above we can get PTAT voltage by taking a difference between the vot
 
 We can observe from Simulation that the slope of PTAT voltage is much lesser than the slope of CTAT voltages.
 
+### 1.3) Self-Biased Current Mirror Circuit
+
+he Self-biased current mirror is a type of current mirror which requires no external biasing. This current mirrors biases it self to the desired current value without any external current source reference.
+
+Below is the simulation of it
+
+![Screenshot from 2024-01-13 22-32-37 (1)](https://github.com/K-shejuti/Bandgap-Reference-Circuit/assets/152790020/4bcd1651-3136-4a52-b7dd-12542e551df2)
+
+### 1.4)Reference Branch Circuit
+
+The reference circuit branch performs the addition of CTAT and PTAT volages and gives the final reference voltage. We are using a mirror transitor and a BJT as diode in the reference branch. By virtue of the mirror transistor in the reference branch the same amount of current flows through it as of the current mirror branches. Now from the PTAT circuit branch we are getting PTAT voltage and PTAT current. The same PTAT current is flowing in the reference branch. But the slope of PTAT voltage is much smaller than that of slope of CTAT voltgae. In order to make increase the voltage slope we have to increase the resistance (current constant, so V increases with increase in R). Now across the high resistance we will get our constant reference voltage which is the result of CTAT Voltage + PTAT Voltage.
+
+![refbranch1](https://github.com/K-shejuti/Bandgap-Reference-Circuit/assets/152790020/ce9b3042-e429-4bb2-8120-60b018b1017c)
+
+The whole circuit drawn is xschem below:
+
+![Screenshot from 2024-01-14 13-56-01](https://github.com/K-shejuti/Bandgap-Reference-Circuit/assets/152790020/19fb5e20-d50c-40d7-a84a-c588fbf8fabd)
+
+
+
+
+
 
 
 
