@@ -118,6 +118,11 @@ The below is the simulation for it:
 
 ![Screenshot from 2024-01-14 13-33-32](https://github.com/K-shejuti/Bandgap-Reference-Circuit/assets/152790020/890aff86-3105-4543-af10-26685ae4be88)
 
+But if we zoom in we can see a bell shaped curve and not a straight line. This is due to non linear nature of CTAT and PTAT.
+
+![Screenshot from 2024-01-14 13-38-09](https://github.com/K-shejuti/Bandgap-Reference-Circuit/assets/152790020/c0f55229-d794-46be-a042-b83e2ab85153)
+
+
 ### 1.5 ) Varaible supply volatge:
  Till now we have only the the graphs with varying temperature from -40 to 125 degree celcius, Let us plot the ref voltage when supply is varying from 0 to 5V.
 
