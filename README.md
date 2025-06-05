@@ -81,14 +81,15 @@ The CTAT Voltage generation circuit consist of a BJT connected as a diode and a 
 
 The Simulation is to show CTAT voltage.
 
-![Screenshot from 2024-01-13 01-39-45](https://github.com/K-shejuti/Bandgap-Reference-Circuit/assets/152790020/9397e965-e5a5-40f7-b962-6aff00e29916)
+<img width="490" alt="ctat_ciruit" src="https://github.com/user-attachments/assets/ad6350b9-cc5e-465a-889e-bcdaa1bd7c01" />
 
-![Screenshot from 2024-01-13 01-39-18](https://github.com/K-shejuti/Bandgap-Reference-Circuit/assets/152790020/1113b4fc-fcbf-45b4-adbb-f99e609f67f4)
+<img width="758" alt="ctat_simulation" src="https://github.com/user-attachments/assets/40ec1ce0-95b3-4eea-b713-bff4bf669fb9" />
+
 
 ### 1.2) PTAT Voltage Generation
 As dicussed above we can get PTAT voltage by taking a difference between the votage of 1 diode and n diodes, for simple simulation we are taking n=2. but in general n=8 is taken.
 
-![Screenshot from 2024-01-13 02-10-37](https://github.com/K-shejuti/Bandgap-Reference-Circuit/assets/152790020/80b42227-1a9f-4432-8284-7618a576f9ab)
+<img width="736" alt="ptat_plot" src="https://github.com/user-attachments/assets/65a4e846-2624-492c-b274-36c613e954f1" />
 
 We can observe from Simulation that the slope of PTAT voltage is much lesser than the slope of CTAT voltages.
 
@@ -98,7 +99,7 @@ he Self-biased current mirror is a type of current mirror which requires no exte
 
 Below is the simulation of it
 
-![Screenshot from 2024-01-13 22-32-37 (1)](https://github.com/K-shejuti/Bandgap-Reference-Circuit/assets/152790020/4bcd1651-3136-4a52-b7dd-12542e551df2)
+<img width="513" alt="ptat_circuit-current_mirror" src="https://github.com/user-attachments/assets/5f3861fa-caf4-40e4-b20a-772a59626af5" />
 
 ### 1.4)Reference Branch Circuit
 
@@ -106,9 +107,9 @@ The reference circuit branch performs the addition of CTAT and PTAT volages and 
 
 ![refbranch1](https://github.com/K-shejuti/Bandgap-Reference-Circuit/assets/152790020/ce9b3042-e429-4bb2-8120-60b018b1017c)
 
-The whole circuit drawn is xschem below:
+The whole circuit drawn is ltspice below:
 
-![Screenshot from 2024-01-14 13-56-01](https://github.com/K-shejuti/Bandgap-Reference-Circuit/assets/152790020/19fb5e20-d50c-40d7-a84a-c588fbf8fabd)
+<img width="581" alt="final_current-mirror-schematic" src="https://github.com/user-attachments/assets/47176385-36e3-4116-b6d2-d42fa830a345" />
 
 Now we do know that slope of CTAT is greater than slope of PTAT, so we need to amplify our PTAT voltage, now voltage across the resistance R2= R2/R1*Vtln(n). R1 is used to fix the current in current mirror branch. We can either increase number of diodes in parallel or increase the R2 value, Here we will increase R2 to amplify our PTAT.
 
