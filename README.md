@@ -117,7 +117,7 @@ From the simualtion we can observe that when R2=85k ohm ,the CTAT and PTAT nearl
 
 The below is the simulation for it:
 
-![Screenshot from 2024-01-14 13-33-32](https://github.com/K-shejuti/Bandgap-Reference-Circuit/assets/152790020/890aff86-3105-4543-af10-26685ae4be88)
+![image](https://github.com/user-attachments/assets/b3de8b43-631e-42b7-802e-c97b6b3e900e)
 
 But if we zoom in we can see a bell shaped curve and not a straight line. This is due to non linear nature of CTAT and PTAT.
 
@@ -127,7 +127,8 @@ But if we zoom in we can see a bell shaped curve and not a straight line. This i
 ### 1.5 ) Varaible supply volatge:
  Till now we have only the the graphs with varying temperature from -40 to 125 degree celcius, Let us plot the ref voltage when supply is varying from 0 to 5V.
 
- ![Screenshot from 2024-01-14 13-50-25](https://github.com/K-shejuti/Bandgap-Reference-Circuit/assets/152790020/680b0a69-8d11-4fc0-9188-c490b36755c7)
+<img width="803" alt="supply variation" src="https://github.com/user-attachments/assets/1a48e457-8241-4881-a4f4-b92095802661" />
+
 
 Inially for small value of the supply the mosfets are not in saturation. but after reaching a certain voltage all the Mos are in saturation and the reference voltage is again near to 1.2 V . So the circuit is also taking care of supply variation.
 
