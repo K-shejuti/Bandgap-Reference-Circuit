@@ -1,5 +1,5 @@
 # Bandgap-Reference-Circuit
-This github repository is for the design of a Band Gap Reference Circuit (BGR) using Google-skywater130nm technology PDK.
+This github repository is for the design of a Band Gap Reference Circuit (BGR) using tsmc 180nm technolodgy.
 # Introduction to BGR
 The Bandgap Reference (BGR) is a circuit which provides a stable voltage output which is independent of factors like temperature, supply voltage.
 
@@ -113,7 +113,7 @@ The whole circuit drawn is ltspice below:
 
 Now we do know that slope of CTAT is greater than slope of PTAT, so we need to amplify our PTAT voltage, now voltage across the resistance R2= R2/R1*Vtln(n). R1 is used to fix the current in current mirror branch. We can either increase number of diodes in parallel or increase the R2 value, Here we will increase R2 to amplify our PTAT.
 
-From the simualtion we can observe that when R2=85k ohm ,the CTAT and PTAT nearly cancels each other and we get the constant voltage of 1.2V as vreference.
+From the simualtion we can observe that when R2=110k ohm ,the CTAT and PTAT nearly cancels each other and we get the constant voltage  reference.
 
 The below is the simulation for it:
 
@@ -138,25 +138,27 @@ Since the circuit is self baised we need a startup circuits. There are total two
 
 - Zero current region
 - Normal operating region
-Zero cucrent region is a stable operating region . so once the circuit enters this region it can't come out of the state without disturbance. but current in the circuit is zero ,so the circuit can't attend the reference voltgae of 1.2V. This issue can only be observed in transient and when the supply has a finite delay and rise time.
+Zero cucrent region is a stable operating region . so once the circuit enters this region it can't come out of the state without disturbance. but current in the circuit is zero ,so the circuit can't attend the desired reference This issue can only be observed in transient and when the supply has a finite delay and rise time.
 
-![Screenshot from 2024-01-14 15-07-07](https://github.com/K-shejuti/Bandgap-Reference-Circuit/assets/152790020/414f65a0-4b5f-4b41-b76d-6452baf3cbe7)
+<img width="794" alt="pulse input" src="https://github.com/user-attachments/assets/6522f254-f1e9-45c3-905b-307eb64bda57" />
 
-![Screenshot from 2024-01-14 15-08-41](https://github.com/K-shejuti/Bandgap-Reference-Circuit/assets/152790020/ee9a1a50-cf76-4015-a83f-7275ba0bab44)
+<img width="734" alt="V-reference" src="https://github.com/user-attachments/assets/fef51f75-0942-467e-a97f-7f58eb8c263a" />
 
 We can observe here that vref is reaching a maimum value of 450 mv.
 
 The start-up circuit forecefully flows a slow amount of current through the self-biased current mirror when the current is 0 in the current mirror branches, as the current mirror is self biased this small current creats a disturbance and the current mirror auto biased to the desired current value.
 
-Below is the circuit drawn is Xschem. 
+Below is the circuit drawn is Ltspice. 
 
-![Screenshot from 2024-01-14 15-23-21](https://github.com/K-shejuti/Bandgap-Reference-Circuit/assets/152790020/bb6ccae2-35b0-46be-94ef-f5a0938620ea)
+<img width="762" alt="startup_schematic" src="https://github.com/user-attachments/assets/087bbd6e-9165-4f8b-a44a-0683afbcccf1" />
 
-The startup issue is solved and the circuit is again giving a vref of 1.2V.
+The startup issue is solved and the circuit is again giving the desired vref value
 
-![Screenshot from 2024-01-14 15-23-08](https://github.com/K-shejuti/Bandgap-Reference-Circuit/assets/152790020/aa8fb74e-7edb-442d-a509-469fa76f0398)
+<img width="847" alt="vref_with_startup" src="https://github.com/user-attachments/assets/767fc1e5-c7c8-4c11-9c80-27d8222533ec" />
 
 This is the complete simulation of current mirror based startup circuit. 
+
+
 
 
 
